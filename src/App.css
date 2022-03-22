@@ -1,38 +1,110 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #E5E5E5;
+}
+
+
 .App {
   text-align: center;
+  margin: 0 auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App> div{
+  position: relative;
+  display:flex;
+  justify-content:space-around;
+  padding: 1rem;
+ background: #D3D3D3
+ ;
+  margin: 0 auto;
+
+}
+.App> div>h1{
+  background: #D3D3D3
+
+}
+.App div> button{
+  height:2rem;
+  width: 5rem;
+  align-items:center;
+  background-color: #555A88;
+  color: #ffff;
+  z-index: 100;
+}
+.App div> button i{
+  background-color: #555A88;
+  margin: 0 auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.users-list {
+  position: relative;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.users-list >li{
+  list-style: none;
+  border: solid 1px #E5E5E5;
+  box-shadow: 2px 2px 5px rgb(42, 42, 42);
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  width:20rem;
+  border-radius: .5rem;
+  z-index: 100;
+}
+.users-list li{
+list-style: none;
+
 }
 
-.App-link {
-  color: #61dafb;
+.users-list>li>ul h2 {
+  border-bottom: 0.5px solid gray;
+}
+.users-list>li> div{
+  padding: .5rem;
+  border-top: 0.5px solid gray;
+
+}
+.users-list>li> div button{
+  
+  margin: .5rem;
+}
+.users-list>li> div .btn-delete {
+  background-color:#D93F3F;
+  border: 1px solid #D93F3F;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users-form{
+  border-radius: .5rem;
 }
+.users-form>div{
+  border-radius: .5rem;
+  box-shadow: 2px 2px 5px rgb(42, 42, 42);
+
+}
+.users-form div{
+  position: relative;
+  height:4rem;
+  padding:1rem;
+}
+.users-form div label{
+  padding: .5rem;
+  font-size:400;
+}
+.users-form form .input-container input{
+  border-radius: .3rem;
+
+}
+.users-form form div button{
+  border-radius: .5rem;
+}
+
+
