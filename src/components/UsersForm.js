@@ -35,17 +35,18 @@ const UsersForm = ({addUser, userEdit,selectUser,updateUser,setIsShowing,isShowi
     const submit=(e) => {
         e.preventDefault()
         const userObj={
-            firstName,
-            lastName,
+            first_name: firstName,
+            last_name: lastName,
             email,
             password,
             birthday
         }
+        
         if(userEdit){
             userObj.id=userEdit.id
             updateUser(userObj)
         }else{
-            addUser()
+            addUser(userObj)
         }
     }
     return (

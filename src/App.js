@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="App">
     <div>
-      <h1>Users</h1>
+      <h1>Users </h1>
       <button onClick={() =>setIsShowing(!isShowing)}><i className="fa-solid fa-plus"></i>New user</button>
     </div>
     {isShowing ? (

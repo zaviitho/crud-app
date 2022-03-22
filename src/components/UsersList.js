@@ -8,7 +8,7 @@ const UsersList = ({users,removeUser,selectUser,setIsShowing,isShowing}) => {
                 <li key={user.id}>
                     
                     <ul>
-                        <h2>{user.first_name}{user.last_name}</h2>
+                        <h2>{user.first_name} {user.last_name}</h2>
                         <li><i className="fa-solid fa-envelope"></i>{user.email}</li>
                         <li><i className="fa-solid fa-key"></i>{user.password}</li>
                         <li><i className="fa-solid fa-cake-candles"></i>{user.birthday}</li>
